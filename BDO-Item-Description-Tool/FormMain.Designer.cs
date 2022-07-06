@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.trackBarRed = new System.Windows.Forms.TrackBar();
             this.trackBarGreen = new System.Windows.Forms.TrackBar();
             this.trackBarBlue = new System.Windows.Forms.TrackBar();
@@ -302,6 +303,7 @@
             this.Controls.Add(this.trackBarBlue);
             this.Controls.Add(this.trackBarGreen);
             this.Controls.Add(this.trackBarRed);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMain";
             this.Text = "BDO Item Description Tool";
             this.Load += new System.EventHandler(this.FormMain_Load);
